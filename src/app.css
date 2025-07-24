@@ -2,4 +2,6 @@
 
 @theme {
   --color-titanio-500: oklch(23.50% 0.000 0);
+  --font-inter: Inter, sans-serif;
+  --font-gabarito: Gabarito, sans-serif;
 }

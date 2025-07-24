@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
+	import Intro from '$lib/Intro.svelte';
 	import Loader from '$lib/Loader.svelte';
+	import ScrollArrow from '$lib/ScrollArrow.svelte';
 	let isLoading = $state(true);
 	if (browser) {
 		if (document.readyState === 'complete') {
@@ -17,5 +19,6 @@
 	{#if isLoading}
 		<Loader />
 	{/if}
-	<section></section>
+  <ScrollArrow />
+  <Intro />
 </main>

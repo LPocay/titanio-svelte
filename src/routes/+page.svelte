@@ -19,6 +19,6 @@
 	{#if isLoading}
 		<Loader />
 	{/if}
-  <ScrollArrow />
-  <Intro />
+	<ScrollArrow />
+	<Intro />
 </main>

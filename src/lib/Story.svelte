@@ -3,7 +3,7 @@
 	import ScrollArrow from './ScrollArrow.svelte';
 </script>
 
-<section class="grid h-screen w-screen grid-rows-2 text-titanio-500 relative">
+<section class="relative grid h-screen w-screen grid-rows-2 text-titanio-500">
 	<div
 		class="flex w-full flex-col items-start justify-end bg-[url(/img/story-bg.png)] px-10 pb-15 md:px-[15vw]"
 	>
@@ -13,9 +13,8 @@
 				Más de 70 años en el mercado brindando el mejor producto para tu seguridad.
 			</p>
 		</div>
-		<LinkButton href="">Ver detalles</LinkButton>
+		<LinkButton dark href="">Ver detalles</LinkButton>
 	</div>
-	<div>
-	</div>
+	<div></div>
 	<ScrollArrow dark position="right" />
 </section>

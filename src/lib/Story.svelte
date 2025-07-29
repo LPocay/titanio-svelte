@@ -3,7 +3,7 @@
 	import ScrollArrow from './ScrollArrow.svelte';
 </script>
 
-<section class="grid h-screen w-screen grid-rows-2 text-titanio-500">
+<section class="grid h-screen w-screen grid-rows-2 text-titanio-500 relative">
 	<div
 		class="flex w-full flex-col items-start justify-end bg-[url(/img/story-bg.png)] px-10 pb-15 md:px-[15vw]"
 	>
@@ -17,5 +17,5 @@
 	</div>
 	<div>
 	</div>
-	<ScrollArrow position="left" />
+	<ScrollArrow dark position="right" />
 </section>

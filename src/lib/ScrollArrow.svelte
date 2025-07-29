@@ -1,13 +1,16 @@
 <script lang="ts">
-	let { position } = $props<{ position: 'right' | 'left' }>();
+  import whiteArrow from '$lib/assets/scroll-arrow-white.svg'
+  import blackArrow from '$lib/assets/scroll-arrow-black.svg'
+	let { position, dark = false } = $props<{ position: 'right' | 'left', dark?: boolean }>();
+  const arrowImage = dark ? blackArrow : whiteArrow;
 </script>
 
 {#if position === 'left'}
 	<div class="absolute left-8 bottom-8">
-		<img src="/img/scroll-arrow.svg" alt="" />
+		<img src={arrowImage} alt="" />
 	</div>
 {:else}
 	<div class="absolute right-8 bottom-8">
-		<img src="/img/scroll-arrow.svg" alt="" />
+		<img src={arrowImage} alt="" />
 	</div>
 {/if}

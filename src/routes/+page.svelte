@@ -3,6 +3,7 @@
 	import Intro from '$lib/Intro.svelte';
 	import Loader from '$lib/Loader.svelte';
 	import Product from '$lib/Product.svelte';
+	import Story from '$lib/Story.svelte';
 	let isLoading = $state(true);
 
 	if (browser) {
@@ -22,4 +23,5 @@
 	{/if}
 	<Intro />
 	<Product />
+	<Story />
 </main>

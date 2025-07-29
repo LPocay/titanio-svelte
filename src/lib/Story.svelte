@@ -5,7 +5,7 @@
 
 <section class="relative grid h-screen w-screen grid-rows-2 text-titanio-500">
 	<div
-		class="flex w-full flex-col items-start justify-end bg-[url(/img/story-bg.png)] px-10 pb-15 md:px-[15vw]"
+		class="relative flex w-full flex-col items-start justify-end bg-[url(/img/story-bg.png)] px-10 pb-15 md:px-[15vw]"
 	>
 		<div class="mb-4">
 			<h1 class="text-xs md:text-[16px]">Nuestra historia</h1>
@@ -14,7 +14,12 @@
 			</p>
 		</div>
 		<LinkButton dark href="">Ver detalles</LinkButton>
+		<div class="max-sm:hidden">
+			<ScrollArrow dark position="right" />
+		</div>
 	</div>
 	<div></div>
-	<ScrollArrow dark position="right" />
+	<div class="md:hidden">
+		<ScrollArrow dark position="right" />
+	</div>
 </section>

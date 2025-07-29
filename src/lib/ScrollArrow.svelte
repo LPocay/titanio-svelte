@@ -7,10 +7,10 @@
 
 {#if position === 'left'}
 	<div class="absolute bottom-8 left-8">
-		<img src={arrowImage} alt="" />
+		<img src={arrowImage} alt="" class="md:h-32" />
 	</div>
 {:else}
 	<div class="absolute right-8 bottom-8">
-		<img src={arrowImage} alt="" />
+		<img src={arrowImage} alt="" class="md:h-32" />
 	</div>
 {/if}

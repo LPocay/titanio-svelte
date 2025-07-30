@@ -1,4 +1,5 @@
 <script>
+	import Carousel from './Carousel.svelte';
 	import LinkButton from './LinkButton.svelte';
 	import ScrollArrow from './ScrollArrow.svelte';
 </script>
@@ -18,7 +19,9 @@
 			<ScrollArrow dark position="right" />
 		</div>
 	</div>
-	<div></div>
+	<div>
+  <Carousel />
+  </div>
 	<div class="md:hidden">
 		<ScrollArrow dark position="right" />
 	</div>

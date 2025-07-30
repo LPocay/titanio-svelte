@@ -10,7 +10,7 @@
 </script>
 
 <section
-	class="flex h-screen w-full flex-col items-center justify-center bg-[url(/img/product-bg.png)] bg-cover text-white md:flex-row md:bg-[url(/img/product-big-bg.png)] md:pl-40 md:pr-14"
+	class="relative flex h-screen w-full flex-col items-center justify-center bg-[url(/img/product-bg.png)] bg-cover text-white md:flex-row md:bg-[url(/img/product-big-bg.png)] md:pr-14 md:pl-40"
 >
 	<div class="mb-16 flex w-full flex-col items-start justify-center px-8">
 		<div class="mb-4">
@@ -19,7 +19,7 @@
 		</div>
 		<LinkButton href="">Ver todos</LinkButton>
 	</div>
-	<div class="flex w-full flex-col items-center justify-center px-8 max-w-[42vw]">
+	<div class="flex w-full flex-col items-center justify-center px-8 md:max-w-[42vw]">
 		<ul class="w-full">
 			{#each testimonials as tesmonie (tesmonie)}
 				<li class="border-b-solid border-b border-b-white py-6 text-xl md:text-2xl">

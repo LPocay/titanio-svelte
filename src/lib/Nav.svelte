@@ -8,7 +8,7 @@
 			<a href="#historia">Historia</a>
 		</li>
 		<li>
-			<a href="">Charlemos</a>
+			<a href="#charlemos">Charlemos</a>
 		</li>
 	</ul>
 	<button class="cursor-pointer md:hidden">

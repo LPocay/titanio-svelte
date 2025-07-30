@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
+	import Contact from '$lib/Contact.svelte';
 	import Intro from '$lib/Intro.svelte';
 	import Loader from '$lib/Loader.svelte';
 	import Product from '$lib/Product.svelte';
@@ -26,4 +27,5 @@
 	<Product />
 	<Story />
   <Testimonials />
+  <Contact />
 </main>

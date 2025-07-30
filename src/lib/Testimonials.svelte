@@ -1,5 +1,6 @@
 <script>
 	import LinkButton from './LinkButton.svelte';
+	import ScrollArrow from './ScrollArrow.svelte';
 	const testimonials = [
 		'Esto es un testimonio de un cliente muy satisfecho con el producto 1',
 		'Esto es un testimonio de un cliente muy satisfecho con el producto 2',
@@ -29,4 +30,5 @@
 			{/each}
 		</ul>
 	</div>
+  <ScrollArrow position="left" />
 </section>

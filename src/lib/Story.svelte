@@ -4,7 +4,7 @@
 	import ScrollArrow from './ScrollArrow.svelte';
 </script>
 
-<section class="relative grid h-screen w-screen grid-rows-2 text-titanio-500">
+<section class="relative grid h-screen w-full grid-rows-2 text-titanio-500" id="historia">
 	<div
 		class="relative flex w-full flex-col items-start justify-end bg-[url(/img/story-bg.png)] px-10 pb-15 md:px-[15vw]"
 	>

@@ -4,7 +4,7 @@
 </script>
 
 <section
-	class="relative h-screen bg-[url(/img/intro-bg.png)] md:bg-[url(/img/intro-big-bg.png)] md:bg-cover"
+	class="relative h-screen bg-[url(/img/intro-bg.png)] md:bg-[url(/img/intro-big-bg.png)] bg-cover"
 >
 	<Nav />
 	<ScrollArrow position="right" />

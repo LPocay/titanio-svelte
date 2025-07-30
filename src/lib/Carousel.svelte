@@ -1,9 +1,9 @@
 <script lang="ts">
 	import slideButtonImg from '$lib/assets/slide-button.png';
 	const images = [
-		'https://images.pexels.com/photos/1366942/pexels-photo-1366942.jpeg',
-		'https://images.pexels.com/photos/163016/crash-test-collision-60-km-h-distraction-163016.jpeg',
-		'https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg'
+		'https://placehold.co/600x400',
+		'https://placehold.co/600x400',
+		'https://placehold.co/600x400'
 	];
 	let isTransitioning = $state(false);
 	let currentIndex = $state(0);
@@ -51,15 +51,15 @@
 </script>
 
 <div class="relative h-full w-full">
-	<div class="absolute right-7 md:right-14 flex h-full items-center justify-center z-10">
+	<div class="absolute right-7 z-10 flex h-full items-center justify-center md:right-14">
 		<button class="cursor-pointer" onclick={nextImage}>
 			<img src={slideButtonImg} alt="" />
 		</button>
 	</div>
-	<div class="absolute left-7 md:left-14 flex h-full items-center justify-center z-10">
+	<div class="absolute left-7 z-10 flex h-full items-center justify-center md:left-14">
 		<button class="cursor-pointer" onclick={prevImage}>
 			<img class="rotate-y-180" src={slideButtonImg} alt="" />
-    </button>
+		</button>
 	</div>
 	<div class="relative grid h-full w-full flex-nowrap overflow-hidden">
 		<img

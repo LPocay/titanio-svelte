@@ -4,6 +4,7 @@
 	import Loader from '$lib/Loader.svelte';
 	import Product from '$lib/Product.svelte';
 	import Story from '$lib/Story.svelte';
+	import Testimonials from '$lib/Testimonials.svelte';
 	let isLoading = $state(true);
 
 	if (browser) {
@@ -24,4 +25,5 @@
 	<Intro />
 	<Product />
 	<Story />
+  <Testimonials />
 </main>

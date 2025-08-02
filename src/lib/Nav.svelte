@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import closeButtonImg from '$lib/assets/close.svg';
 
 	let isOpen = $state(false);
@@ -14,12 +15,12 @@
 	<img src="/img/logo.svg" alt="" />
 	<ul class="grid grid-cols-3 gap-72 text-xl max-sm:hidden">
 		<li>
-			<a class={window.location.pathname === '/product' ? 'underline' : ''} href="/product"
+			<a class={page.url.pathname === '/product' ? 'underline' : ''} href="/product"
 				>Producto</a
 			>
 		</li>
 		<li>
-			<a class={window.location.pathname === '/about' ? 'underline' : ''} href="#historia"
+			<a class={page.url.pathname === '/about' ? 'underline' : ''} href="#historia"
 				>Historia</a
 			>
 		</li>

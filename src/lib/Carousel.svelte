@@ -1,10 +1,9 @@
 <script lang="ts">
 	import slideButtonImg from '$lib/assets/slide-button.png';
-	const images = [
-		'https://placehold.co/600x400',
-		'https://placehold.co/600x400',
-		'https://placehold.co/600x400'
-	];
+	import slide1 from '$lib/assets/s1.png';
+	import slide2 from '$lib/assets/s2.png';
+	import slide3 from '$lib/assets/s3.png';
+	const images = [slide1, slide2, slide3];
 	let isTransitioning = $state(false);
 	let currentIndex = $state(0);
 	let nextIndex = $state(0);
@@ -51,25 +50,26 @@
 </script>
 
 <div class="relative h-full w-full">
-	<div class="absolute right-7 z-10 flex h-full items-center justify-center md:right-14">
+	<div class="absolute right-7 z-20 flex h-full items-center justify-center md:right-14">
 		<button class="cursor-pointer" onclick={nextImage}>
 			<img src={slideButtonImg} alt="" />
 		</button>
 	</div>
-	<div class="absolute left-7 z-10 flex h-full items-center justify-center md:left-14">
+	<div class="absolute left-7 z-20 flex h-full items-center justify-center md:left-14">
 		<button class="cursor-pointer" onclick={prevImage}>
 			<img class="rotate-y-180" src={slideButtonImg} alt="" />
 		</button>
 	</div>
-	<div class="relative grid h-full w-full flex-nowrap overflow-hidden">
+	<div class="shadow-x relative grid h-full w-full flex-nowrap overflow-hidden">
 		<img
 			class={currentImgClasses.join(' ')}
+			style="z-index: -1;"
 			src={images[currentIndex]}
 			alt=""
 			onanimationend={onAnimationEnd}
 		/>
 		{#if isTransitioning}
-			<img class={nextImgClasses.join(' ')} src={images[nextIndex]} alt="" />
+			<img style="z-index: -1;" class={nextImgClasses.join(' ')} src={images[nextIndex]} alt="" />
 		{/if}
 	</div>
 </div>
@@ -130,5 +130,10 @@
 		to {
 			transform: translateX(-100%);
 		}
+	}
+	.shadow-x {
+		box-shadow:
+			72px 7px 101px -70px rgba(0, 0, 0, 0.75) inset,
+			-72px 7px 101px -70px rgba(0, 0, 0, 0.75) inset;
 	}
 </style>

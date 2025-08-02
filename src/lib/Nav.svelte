@@ -13,7 +13,7 @@
 	<img src="/img/logo.svg" alt="" />
 	<ul class="grid grid-cols-3 gap-72 text-xl max-sm:hidden">
 		<li>
-			<a href="#producto">Producto</a>
+			<a href="/product">Producto</a>
 		</li>
 		<li>
 			<a href="#historia">Historia</a>
@@ -35,7 +35,7 @@
 		</button>
 		<ul class="flex flex-col gap-4 text-xl">
 			<li>
-				<a href="#producto">Producto</a>
+				<a href="/product">Producto</a>
 			</li>
 			<li>
 				<a href="#historia">Historia</a>

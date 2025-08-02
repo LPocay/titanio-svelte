@@ -1,24 +1,6 @@
 <script>
 	import LinkButton from './LinkButton.svelte';
 	import ScrollArrow from './ScrollArrow.svelte';
-	const testimonials = [
-		{
-			text: 'Esto es un testimonio de un cliente muy satisfecho con el producto 1',
-			size: 'text-2xl'
-		},
-		{
-			text: 'Esto es un testimonio de un cliente muy satisfecho con el producto 1',
-			size: 'text-5xl'
-		},
-		{
-			text: 'Esto es un testimonio de un cliente muy satisfecho con el producto 1',
-			size: 'text-3xl'
-		},
-		{
-			text: 'Esto es un testimonio de un cliente muy satisfecho con el producto 1',
-			size: 'text-2xl'
-		}
-	];
 </script>
 
 <section

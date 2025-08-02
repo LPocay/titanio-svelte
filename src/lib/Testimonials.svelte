@@ -2,10 +2,22 @@
 	import LinkButton from './LinkButton.svelte';
 	import ScrollArrow from './ScrollArrow.svelte';
 	const testimonials = [
-		'Esto es un testimonio de un cliente muy satisfecho con el producto 1',
-		'Esto es un testimonio de un cliente muy satisfecho con el producto 2',
-		'Esto es un testimonio de un cliente muy satisfecho con el producto 3',
-		'Esto es un testimonio de un cliente muy satisfecho con el producto 4'
+		{
+			text: 'Esto es un testimonio de un cliente muy satisfecho con el producto 1',
+			size: 'text-2xl'
+		},
+		{
+			text: 'Esto es un testimonio de un cliente muy satisfecho con el producto 1',
+			size: 'text-5xl'
+		},
+		{
+			text: 'Esto es un testimonio de un cliente muy satisfecho con el producto 1',
+			size: 'text-3xl'
+		},
+		{
+			text: 'Esto es un testimonio de un cliente muy satisfecho con el producto 1',
+			size: 'text-2xl'
+		}
 	];
 </script>
 
@@ -21,14 +33,57 @@
 	</div>
 	<div class="flex w-full flex-col items-center justify-center px-8 md:max-w-[42vw]">
 		<ul class="w-full">
-			{#each testimonials as tesmonie (tesmonie)}
-				<li class="border-b-solid border-b border-b-white py-6 text-xl md:text-2xl">
-					<p class="overflow-hidden text-ellipsis whitespace-nowrap">
-						"{tesmonie}"
-					</p>
-				</li>
-			{/each}
+			<li
+				class="border-b-solid testimonial overflow-hidden border-b border-b-white py-6 text-xl md:text-2xl"
+			>
+				<p class="testimonial-text overflow-hidden text-ellipsis whitespace-nowrap">
+					"Esto es un testimonio de un cliente muy satisfecho con el producto 1"
+				</p>
+			</li>
+			<li
+				class="border-b-solid testimonial overflow-hidden border-b border-b-white py-6 text-xl md:text-4xl"
+			>
+				<p class="testimonial-text overflow-hidden text-ellipsis whitespace-nowrap">
+					"Esto es un testimonio de un cliente muy satisfecho con el producto 1"
+				</p>
+			</li>
+			<li
+				class="border-b-solid testimonial overflow-hidden border-b border-b-white py-6 text-xl md:text-3xl"
+			>
+				<p class="testimonial-text overflow-hidden text-ellipsis whitespace-nowrap">
+					"Esto es un testimonio de un cliente muy satisfecho con el producto 1"
+				</p>
+			</li>
+			<li
+				class="border-b-solid testimonial overflow-hidden border-b border-b-white py-6 text-xl md:text-2xl"
+			>
+				<p class="testimonial-text overflow-hidden text-ellipsis whitespace-nowrap">
+					"Esto es un testimonio de un cliente muy satisfecho con el producto 1"
+				</p>
+			</li>
 		</ul>
 	</div>
 	<ScrollArrow position="left" />
 </section>
+
+<style>
+	.testimonial .testimonial-text {
+		animation-play-state: paused;
+	}
+
+	.testimonial:hover .testimonial-text {
+		text-overflow: unset;
+		overflow: unset;
+		animation: scroll-text 15s linear infinite;
+		animation-play-state: running;
+	}
+
+	@keyframes scroll-text {
+		from {
+			transform: translateX(0%);
+		}
+		to {
+			transform: translateX(-100%);
+		}
+	}
+</style>

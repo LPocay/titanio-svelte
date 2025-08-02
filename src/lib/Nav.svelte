@@ -1,5 +1,6 @@
 <script lang="ts">
 	import closeButtonImg from '$lib/assets/close.svg';
+
 	let isOpen = $state(false);
 	function closeMenu() {
 		isOpen = false;
@@ -13,10 +14,14 @@
 	<img src="/img/logo.svg" alt="" />
 	<ul class="grid grid-cols-3 gap-72 text-xl max-sm:hidden">
 		<li>
-			<a href="/product">Producto</a>
+			<a class={window.location.pathname === '/product' ? 'underline' : ''} href="/product"
+				>Producto</a
+			>
 		</li>
 		<li>
-			<a href="#historia">Historia</a>
+			<a class={window.location.pathname === '/about' ? 'underline' : ''} href="#historia"
+				>Historia</a
+			>
 		</li>
 		<li>
 			<a href="#charlemos">Charlemos</a>

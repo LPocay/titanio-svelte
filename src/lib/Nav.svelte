@@ -9,23 +9,26 @@
 	function openMenu() {
 		isOpen = true;
 	}
+	function getContactHref() {
+		if (page.url.pathname === '/') {
+			return '#charlemos';
+		}
+
+		return '/#charlemos';
+	}
 </script>
 
 <nav class="absolute flex w-full justify-between p-8 font-inter text-white md:p-14">
 	<img src="/img/logo.svg" alt="" />
 	<ul class="grid grid-cols-3 gap-72 text-xl max-sm:hidden">
 		<li>
-			<a class={page.url.pathname === '/product' ? 'underline' : ''} href="/product"
-				>Producto</a
-			>
+			<a class={page.url.pathname === '/product' ? 'underline' : ''} href="/product">Producto</a>
 		</li>
 		<li>
-			<a class={page.url.pathname === '/about' ? 'underline' : ''} href="#historia"
-				>Historia</a
-			>
+			<a class={page.url.pathname === '/about' ? 'underline' : ''} href="">Historia</a>
 		</li>
 		<li>
-			<a href="#charlemos">Charlemos</a>
+			<a href={getContactHref()}>Charlemos</a>
 		</li>
 	</ul>
 	<button class="cursor-pointer md:hidden" onclick={openMenu}>
@@ -44,10 +47,10 @@
 				<a href="/product">Producto</a>
 			</li>
 			<li>
-				<a href="#historia">Historia</a>
+				<a href="">Historia</a>
 			</li>
 			<li>
-				<a onclick={closeMenu} href="#charlemos">Charlemos</a>
+				<a onclick={closeMenu} href={getContactHref()}>Charlemos</a>
 			</li>
 		</ul>
 	</div>

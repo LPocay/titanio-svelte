@@ -1,10 +1,12 @@
 <script lang="ts">
 	import HistoryFull from "$lib/history/HistoryFull.svelte";
 	import HistoryIntro from "$lib/history/HistoryIntro.svelte";
+	import Quote from "$lib/history/Quote.svelte";
 
 </script>
 
 <main>
   <HistoryIntro />
   <HistoryFull />
+  <Quote />
 </main>

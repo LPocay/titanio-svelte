@@ -6,7 +6,7 @@
 
 <section class="relative grid h-screen w-full grid-rows-2 text-titanio-500" id="historia">
 	<div
-		class="relative flex w-full flex-col items-start justify-end bg-[url(/img/story-bg.png)] px-10 pb-15 md:px-[15vw]"
+		class="relative flex w-full flex-col items-start justify-end bg-[url(/img/history-bg.png)] px-10 pb-15 md:px-[15vw]"
 	>
 		<div class="mb-4">
 			<h1 class="text-xs md:text-[16px]">Nuestra historia</h1>

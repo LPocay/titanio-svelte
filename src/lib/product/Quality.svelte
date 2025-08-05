@@ -4,7 +4,7 @@
 
 <section class="relative grid h-screen w-full grid-rows-2 text-titanio-500" id="quality">
 	<div
-		class="relative flex w-full flex-col items-start justify-center bg-[url(/img/story-bg.png)] px-8 md:px-[15vw] md:justify-end md:pb-11"
+		class="relative flex w-full flex-col items-start justify-center bg-[url(/img/history-bg.png)] px-8 md:px-[15vw] md:justify-end md:pb-11"
 	>
 		<div class="mb-4">
 			<h1 class="text-xs md:text-2xl">Calidad garantizada</h1>

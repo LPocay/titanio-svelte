@@ -8,7 +8,8 @@
 
 	if (browser) {
 		new Lenis({
-			autoRaf: true
+			autoRaf: true,
+      duration: 1.7,
 		});
 	}
 

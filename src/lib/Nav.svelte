@@ -18,8 +18,10 @@
 	}
 </script>
 
-<nav class="absolute flex w-full justify-between p-8 font-inter text-white md:p-14">
-	<img src="/img/logo.svg" alt="" />
+<nav class="absolute z-10 flex w-full justify-between p-8 font-inter text-white md:p-14">
+	<a href="/">
+		<img src="/img/logo.svg" alt="" />
+	</a>
 	<ul class="grid grid-cols-3 gap-72 text-xl max-sm:hidden">
 		<li>
 			<a class={page.url.pathname === '/product' ? 'underline' : ''} href="/product">Producto</a>

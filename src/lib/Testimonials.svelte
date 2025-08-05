@@ -11,7 +11,7 @@
 			<h1 class="text-xs md:text-[16px]">Testimonios</h1>
 			<p class="text-2xl md:text-3xl">Lo que dicen nuestros clientes</p>
 		</div>
-		<LinkButton href="">Ver todos</LinkButton>
+		<LinkButton href="/history#tesimonials">Ver todos</LinkButton>
 	</div>
 	<div class="flex w-full flex-col items-center justify-center px-8 md:max-w-[42vw]">
 		<ul class="w-full">

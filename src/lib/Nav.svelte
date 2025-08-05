@@ -25,7 +25,7 @@
 			<a class={page.url.pathname === '/product' ? 'underline' : ''} href="/product">Producto</a>
 		</li>
 		<li>
-			<a class={page.url.pathname === '/about' ? 'underline' : ''} href="">Historia</a>
+			<a class={page.url.pathname === '/history' ? 'underline' : ''} href="history">Historia</a>
 		</li>
 		<li>
 			<a href={getContactHref()}>Charlemos</a>
@@ -47,7 +47,7 @@
 				<a href="/product">Producto</a>
 			</li>
 			<li>
-				<a href="">Historia</a>
+				<a href="history">Historia</a>
 			</li>
 			<li>
 				<a onclick={closeMenu} href={getContactHref()}>Charlemos</a>

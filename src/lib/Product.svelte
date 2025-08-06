@@ -20,7 +20,7 @@
 		<LinkButton href="">Ver especificaciones</LinkButton>
 	</div>
 	<div
-		class="mx-auto mt-16 h-full w-full max-w-[230px] rounded-[120px] bg-[url(https://placehold.co/600x400)] bg-center md:hidden"
+		class="mx-auto mt-16 h-full w-full max-w-[230px] rounded-[120px] bg-[url(/img/barral-mobile.png)] bg-center md:hidden"
 	></div>
-	<div class="h-full basis-[40%] bg-[url(https://placehold.co/600x400)] max-sm:hidden"></div>
+	<div class="h-full basis-[40%] bg-[url(/img/barral.png)] bg-cover max-sm:hidden"></div>
 </section>

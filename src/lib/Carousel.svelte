@@ -1,9 +1,12 @@
 <script lang="ts">
 	import slideButtonImg from '$lib/assets/slide-button.png';
-	import slide1 from '$lib/assets/s1.png';
-	import slide2 from '$lib/assets/s2.png';
-	import slide3 from '$lib/assets/s3.png';
-	const images = [slide1, slide2, slide3];
+	import { browser } from '$app/environment';
+	import { onMount } from 'svelte';
+	let {
+		auto = false,
+		images = [],
+		rounded = false
+	} = $props<{ auto?: boolean; images: string[]; rounded?: boolean }>();
 	let isTransitioning = $state(false);
 	let currentIndex = $state(0);
 	let nextIndex = $state(0);
@@ -23,6 +26,20 @@
 		'object-cover',
 		'absolute'
 	]);
+
+	if (browser) {
+		onMount(() => {
+			let interval: number;
+			if (auto) {
+				interval = setInterval(() => {
+					nextImage();
+				}, 2000);
+			}
+			return () => {
+				clearInterval(interval);
+			};
+		});
+	}
 
 	function nextImage() {
 		if (isTransitioning) return;
@@ -51,16 +68,20 @@
 
 <div class="relative h-full w-full">
 	<div class="absolute right-7 z-20 flex h-full items-center justify-center md:right-14">
-		<button class="cursor-pointer" onclick={nextImage}>
-			<img src={slideButtonImg} alt="" />
-		</button>
+		{#if !auto}
+			<button class="cursor-pointer" onclick={nextImage}>
+				<img src={slideButtonImg} alt="" />
+			</button>
+		{/if}
 	</div>
 	<div class="absolute left-7 z-20 flex h-full items-center justify-center md:left-14">
-		<button class="cursor-pointer" onclick={prevImage}>
-			<img class="rotate-y-180" src={slideButtonImg} alt="" />
-		</button>
+		{#if !auto}
+			<button class="cursor-pointer" onclick={prevImage}>
+				<img class="rotate-y-180" src={slideButtonImg} alt="" />
+			</button>
+		{/if}
 	</div>
-	<div class="shadow-x relative grid h-full w-full flex-nowrap overflow-hidden">
+	<div class="shadow-x relative grid h-full w-full flex-nowrap overflow-hidden {rounded && "rounded-[120px]"}">
 		<img
 			class={currentImgClasses.join(' ')}
 			style="z-index: -1;"

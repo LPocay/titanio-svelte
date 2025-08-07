@@ -1,9 +1,15 @@
 <script lang="ts">
+	import Carousel from '$lib/Carousel.svelte';
 	import ScrollArrow from '../ScrollArrow.svelte';
+	import slide1 from '$lib/assets/sp1.png';
+	import slide2 from '$lib/assets/sp2.png';
+	import slide3 from '$lib/assets/sp3.png';
+
+	const images = [slide1, slide2, slide3];
 </script>
 
 <section
-	class="relative flex h-screen w-full flex-col bg-[url(/img/product-bg.png)] bg-cover px-8 pt-16 pb-8 font-inter text-white md:flex-row md:items-center md:justify-between md:bg-[url(/img/product-big-bg.png)] md:p-0"
+	class="relative z-[-2] flex h-screen w-full flex-col bg-[url(/img/product-bg.png)] bg-cover px-8 pt-16 pb-8 font-inter text-white md:flex-row md:items-center md:justify-between md:bg-[url(/img/product-big-bg.png)] md:p-0"
 	id="producto"
 >
 	<ScrollArrow position="left" />
@@ -12,14 +18,17 @@
 	>
 		<div class="mb-4">
 			<p class="text-xl md:text-3xl">
-				Acá va un texto resumido de la historia. Tiene que contar de donde nace el producto, el
-				interés por la seguridad, y muchas cosas referentes a lo que se quiere exponer con las
-				noticias. Debería ocupar estos renglones, asi nos queda bien la disposición.
+				Desde una pequeña cerrajería nacida en Montserrat hace más de 50 años hasta el presente, nos
+				apasiona lo mismo: la seguridad.
 			</p>
 		</div>
 	</div>
 	<div
-		class="mx-auto mt-4 h-full w-full max-w-[230px] rounded-[120px] bg-[url(https://placehold.co/600x400)] bg-center md:hidden"
-	></div>
-	<div class="h-full basis-[40%] bg-[url(https://placehold.co/600x400)] max-sm:hidden"></div>
+		class="mx-auto mt-4 h-full w-full max-w-[230px] rounded-[120px] bg-center md:hidden"
+	>
+		<Carousel auto {images} rounded />
+	</div>
+	<div class="h-full basis-[40%] max-sm:hidden">
+		<Carousel auto {images} />
+	</div>
 </section>

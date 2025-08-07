@@ -2,6 +2,10 @@
 	import Carousel from './Carousel.svelte';
 	import LinkButton from './LinkButton.svelte';
 	import ScrollArrow from './ScrollArrow.svelte';
+	import slide1 from '$lib/assets/s1.png';
+	import slide2 from '$lib/assets/s2.png';
+	import slide3 from '$lib/assets/s3.png';
+	const images = [slide1, slide2, slide3];
 </script>
 
 <section class="relative grid h-screen w-full grid-rows-2 text-titanio-500" id="historia">
@@ -10,7 +14,7 @@
 	>
 		<div class="mb-4">
 			<h1 class="text-xs md:text-[16px]">Nuestra historia</h1>
-			<p class="text-2xl md:text-[44px] md:max-w-[660px]">
+			<p class="text-2xl md:max-w-[660px] md:text-[44px]">
 				Más de 70 años en el mercado brindando el mejor producto para tu seguridad.
 			</p>
 		</div>
@@ -20,8 +24,8 @@
 		</div>
 	</div>
 	<div>
-  <Carousel />
-  </div>
+		<Carousel {images} />
+	</div>
 	<div class="md:hidden">
 		<ScrollArrow dark position="right" />
 	</div>

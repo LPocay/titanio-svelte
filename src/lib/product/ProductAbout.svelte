@@ -17,10 +17,12 @@
 		<LinkButton href="">Ver especificaciones</LinkButton>
 	</div>
 
-	<div class="hide-scroll mx-[-2rem] mt-12 flex h-full gap-11 overflow-x-auto px-8 md:mt-0 md:mx-0 md:w-full md:justify-evenly">
+	<div
+		class="hide-scroll mx-[-2rem] mt-12 flex h-full gap-11 overflow-x-auto px-8 md:mx-0 md:mt-0 md:w-full md:justify-evenly"
+	>
 		<div class="flex h-full min-w-[198px] flex-col md:max-w-[336px] md:justify-center">
 			<div
-				class="h-full rounded-[120px] bg-[url(https://placehold.co/600x400)] md:mx-auto md:max-h-[400px] md:min-w-[250px]"
+				class="h-full rounded-[120px] bg-[url(/img/p1.png)] bg-center md:mx-auto md:max-h-[400px] md:min-w-[250px]"
 			></div>
 			<div class="mt-3">
 				<h2 class="text-xs md:text-[16px]">El barral</h2>
@@ -29,9 +31,11 @@
 				</p>
 			</div>
 		</div>
-		<div class="flex h-full min-w-[198px] flex-col md:max-w-[336px] md:justify-center md:translate-y-[-53px]">
+		<div
+			class="flex h-full min-w-[198px] flex-col md:max-w-[336px] md:translate-y-[-53px] md:justify-center"
+		>
 			<div
-				class="h-full rounded-[120px] bg-[url(https://placehold.co/600x400)] md:mx-auto md:max-h-[400px] md:min-w-[250px]"
+				class="h-full rounded-[120px] bg-[url(/img/p2.png)] bg-center md:mx-auto md:max-h-[400px] md:min-w-[250px]"
 			></div>
 			<div class="mt-3">
 				<h2 class="text-xs md:text-[16px]">El barral</h2>
@@ -42,7 +46,7 @@
 		</div>
 		<div class="flex h-full min-w-[198px] flex-col md:max-w-[336px] md:justify-center">
 			<div
-				class="h-full rounded-[120px] bg-[url(https://placehold.co/600x400)] md:mx-auto md:max-h-[400px] md:min-w-[250px]"
+				class="h-full rounded-[120px] bg-[url(/img/p3.png)] bg-center md:mx-auto md:max-h-[400px] md:min-w-[250px]"
 			></div>
 			<div class="mt-3">
 				<h2 class="text-xs md:text-[16px]">El barral</h2>

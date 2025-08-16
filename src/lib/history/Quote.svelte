@@ -10,17 +10,19 @@
 		<ScrollArrow dark position="right" />
 	</div>
 	<div
-		class="text-titanio-500 md:flex md:w-full md:basis-[61%] md:flex-col md:items-start md:justify-center md:px-[10vw]"
+		class="text-titanio-500 md:flex md:w-full md:basis-[61%] md:flex-col md:items-start md:justify-center md:px-[8vw]"
 	>
 		<div class="mb-4">
-			<p class="text-2xl italic md:text-3xl md:mb-4">
-				“Acá me gustaría que pongamos una cita de algo que represente para vos que significa
-				titanio, por qué es algo que te apasiona.”
+			<p class="mb-4 italic md:mb-4 md:text-3xl font-inter font-light">
+				“Con más de 50 años dedicados al desarrollo de tecnologias en materia de seguridad, TITANIO
+				nació fruto de la necesidad de un producto de alta resistencia contra entraderas. Hoy con
+				orgullo, aseguramos que es el único producto de su tipo en Argentina, garantizando la
+				seguridad del cliente.”
 			</p>
 			<p class="text-xl font-semibold md:text-3xl">Javier Gutierrez, Co-Founder</p>
 		</div>
 	</div>
 	<div
-		class="mx-auto mt-4 h-full w-full max-w-[233px] rounded-[120px] bg-[url(https://placehold.co/600x400/black/white)] bg-center md:max-w-[300px] md:max-h-[450px] md:rounded-[180px]"
+		class="mx-auto mt-4 h-full w-full max-w-[233px] rounded-[120px] bg-[url(/img/ceo.png)] bg-cover bg-center md:max-h-[450px] md:max-w-[300px] md:rounded-[180px]"
 	></div>
 </section>

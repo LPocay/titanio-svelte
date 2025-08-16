@@ -22,12 +22,13 @@
 	>
 		<div class="flex h-full min-w-[198px] flex-col md:max-w-[336px] md:justify-center">
 			<div
-				class="h-full rounded-[120px] bg-[url(/img/p1.png)] bg-center md:mx-auto md:max-h-[400px] md:min-w-[250px]"
+				class="h-full rounded-[120px] bg-[url(/img/p1.png)] bg-cover bg-center md:mx-auto md:max-h-[400px] md:min-w-[250px] max-sm:max-h-[338px]"
 			></div>
 			<div class="mt-3">
 				<h2 class="text-xs md:text-[16px]">El barral</h2>
-				<p class="md:text-2xl">
-					Titanio es un barral para proteger tu hogar, a un precio accesible.
+				<p class="md:text-[18px]">
+					Sin requerir de una obra, este sistema único en el país, asegura tu hogar de la mejor
+					manera.
 				</p>
 			</div>
 		</div>
@@ -35,23 +36,25 @@
 			class="flex h-full min-w-[198px] flex-col md:max-w-[336px] md:translate-y-[-53px] md:justify-center"
 		>
 			<div
-				class="h-full rounded-[120px] bg-[url(/img/p2.png)] bg-center md:mx-auto md:max-h-[400px] md:min-w-[250px]"
+				class="h-full rounded-[120px] bg-[url(/img/p2.png)] bg-cover bg-center md:mx-auto md:max-h-[400px] md:min-w-[250px]"
 			></div>
 			<div class="mt-3">
-				<h2 class="text-xs md:text-[16px]">El barral</h2>
-				<p class="md:text-2xl">
-					Titanio es un barral para proteger tu hogar, a un precio accesible.
+				<h2 class="text-xs md:text-[16px]">La colocación</h2>
+				<p class="md:text-[18px]">
+					Nuestro sistema de anclaje de orejas y espiga de acero se fija independiente al marco,
+					generando una resistencia única en el mercado.
 				</p>
 			</div>
 		</div>
 		<div class="flex h-full min-w-[198px] flex-col md:max-w-[336px] md:justify-center">
 			<div
-				class="h-full rounded-[120px] bg-[url(/img/p3.png)] bg-center md:mx-auto md:max-h-[400px] md:min-w-[250px]"
+				class="h-full rounded-[120px] bg-[url(/img/p3.png)] bg-cover bg-center md:mx-auto md:max-h-[400px] md:min-w-[250px]"
 			></div>
 			<div class="mt-3">
 				<h2 class="text-xs md:text-[16px]">El barral</h2>
-				<p class="md:text-2xl">
-					Titanio es un barral para proteger tu hogar, a un precio accesible.
+				<p class="md:text-[18px]">
+					Apertura con llave anti-ganzúa y protector de acero templado, sumado a un anti-pánico
+					interior para una evacuación segura en caso de emergencias sin llaves.
 				</p>
 			</div>
 		</div>

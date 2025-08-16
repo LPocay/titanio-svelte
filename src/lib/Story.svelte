@@ -18,7 +18,7 @@
 				Más de 70 años en el mercado brindando el mejor producto para tu seguridad.
 			</p>
 		</div>
-		<LinkButton dark href="">Ver detalles</LinkButton>
+		<LinkButton dark href="/history#producto">Ver detalles</LinkButton>
 		<div class="max-sm:hidden">
 			<ScrollArrow dark position="right" />
 		</div>

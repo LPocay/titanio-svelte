@@ -1,11 +1,8 @@
 <script lang="ts">
 	import Carousel from '$lib/Carousel.svelte';
 	import ScrollArrow from '../ScrollArrow.svelte';
-	import slide1 from '$lib/assets/sp1.png';
-	import slide2 from '$lib/assets/sp2.png';
-	import slide3 from '$lib/assets/sp3.png';
 
-	const images = [slide1, slide2, slide3];
+	const images = ['/img/sp1.png', '/img/sp2.png', '/img/sp3.png'];
 </script>
 
 <section
@@ -23,9 +20,7 @@
 			</p>
 		</div>
 	</div>
-	<div
-		class="mx-auto mt-4 h-full w-full max-w-[230px] rounded-[120px] bg-center md:hidden"
-	>
+	<div class="mx-auto mt-4 h-full w-full max-w-[230px] rounded-[120px] bg-center md:hidden">
 		<Carousel auto {images} rounded />
 	</div>
 	<div class="h-full basis-[40%] max-sm:hidden">

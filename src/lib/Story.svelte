@@ -2,15 +2,12 @@
 	import Carousel from './Carousel.svelte';
 	import LinkButton from './LinkButton.svelte';
 	import ScrollArrow from './ScrollArrow.svelte';
-	import slide1 from '$lib/assets/s1.png';
-	import slide2 from '$lib/assets/s2.png';
-	import slide3 from '$lib/assets/s3.png';
-	const images = [slide1, slide2, slide3];
+	const images = ['/img/s1.png', '/img/s2.png', '/img/s3.png'];
 </script>
 
 <section class="relative grid h-screen w-full grid-rows-2 text-titanio-500" id="historia">
 	<div
-		class="relative flex w-full flex-col items-start justify-end bg-[url(/img/history-bg.png)] px-10 pb-15 md:pr-20"
+		class="relative flex w-full flex-col items-start justify-end bg-[url(/img/history-bg.png)] px-10 pb-15 md:pb-8 md:pr-20"
 	>
 		<div class="mb-4">
 			<h1 class="text-xs md:text-[16px]">Nuestra historia</h1>

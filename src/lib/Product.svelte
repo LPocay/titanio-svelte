@@ -1,6 +1,25 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
+	import { page } from '$app/state';
+	import { onMount } from 'svelte';
 	import LinkButton from './LinkButton.svelte';
 	import ScrollArrow from './ScrollArrow.svelte';
+
+	if (browser) {
+		onMount(() => {
+			const hash = page.url.hash;
+			if (hash) {
+				const el = document.querySelector(hash);
+				if (el) {
+					setTimeout(() => {
+						el.scrollIntoView({ behavior: 'smooth' });
+					}, 200);
+				}
+			} else {
+				window.scrollTo({ top: 0 });
+			}
+		});
+	}
 
 	export function playOnView(
 		node: HTMLVideoElement,
@@ -57,7 +76,7 @@
 				Titanio es un barral para proteger tu hogar, a un precio accesible.
 			</p>
 		</div>
-		<LinkButton href="/product#producto">Ver especificaciones</LinkButton>
+		<LinkButton href="/product">Ver especificaciones</LinkButton>
 	</div>
 	<div
 		class="mx-auto mt-16 h-full w-full max-w-[230px] rounded-[120px] bg-[url(/img/barral-mobile.png)] bg-cover bg-center md:hidden"

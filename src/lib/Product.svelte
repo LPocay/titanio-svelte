@@ -60,7 +60,7 @@
 		<LinkButton href="/product">Ver especificaciones</LinkButton>
 	</div>
 	<div
-		class="mx-auto mt-16 h-full w-full max-w-[200px] rounded-[120px] bg-[url(/img/barral-mobile.png)] bg-cover bg-center md:hidden md:max-w-none"
+		class="mx-auto mt-16 h-full w-full max-w-[200px] rounded-[120px] bg-[url(/img/barral-mobile.png)] bg-cover bg-center md:hidden md:max-w-none overflow-hidden"
 	>
 		<video
 			src="/video/v1.mp4"
@@ -69,19 +69,22 @@
 			loop
 			disablePictureInPicture
       controlsList="nodownload"
-			class="h-full w-full rounded-[120px] object-cover object-center"
-			use:playOnView={{ threshold: 0.5, rootMargin: '150px 0px' }}
+			class="h-full w-full rounded-[120px] object-cover object-center scale-150"
+			use:playOnView={{ threshold: 0.05, rootMargin: '150px 0px' }}
 		></video>
 	</div>
-	<div class="h-full basis-[40%] bg-[url(/img/barral.png)] bg-cover max-sm:hidden">
+	<div class="h-full basis-[40%] bg-[url(/img/barral.png)] bg-cover max-sm:hidden overflow-hidden">
 		<video
 			src="/video/v1.mp4"
 			preload="metadata"
 			playsinline
+      autoplay
 			muted
 			loop
-			class="h-full w-full object-none"
-			use:playOnView={{ threshold: 0.5, rootMargin: '150px 0px' }}
+			disablePictureInPicture
+      controlsList="nodownload"
+			class="h-full w-full object-none scale-150"
+			use:playOnView={{ threshold: 0.05, rootMargin: '150px 0px' }}
 		></video>
 	</div>
 </section>

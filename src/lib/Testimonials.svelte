@@ -19,7 +19,7 @@
 				<img src={startSVG} alt="" />
 			</div>
 		</div>
-		<LinkButton href="/history#tesimonials">Ver todos</LinkButton>
+		<LinkButton target="#testimonials" href="/history">Ver todos</LinkButton>
 	</div>
 	<div class="flex w-full flex-col items-center justify-center px-8 md:max-w-[42vw]">
 		<ul class="w-full">

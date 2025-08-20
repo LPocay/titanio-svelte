@@ -1,27 +1,10 @@
 <script>
-	import { browser } from '$app/environment';
-	import { page } from '$app/state';
-	import { onMount } from 'svelte';
 	import ScrollArrow from '../ScrollArrow.svelte';
-
-	if (browser) {
-		onMount(() => {
-			const hash = page.url.hash;
-			if (hash) {
-				const el = document.querySelector(hash);
-				if (el) {
-					setTimeout(() => {
-						el.scrollIntoView({ behavior: 'smooth' });
-					}, 200);
-				}
-			}
-		});
-	}
 </script>
 
 <section
-	class="relative flex w-full flex-col items-center justify-center bg-[url(/img/product-bg.png)] bg-cover text-white md:bg-[url(/img/product-big-bg.png)] md:pr-14 md:pl-32 py-14 md:py-14"
-	id="tesimonials"
+	class="relative flex w-full flex-col items-center justify-center bg-[url(/img/product-bg.png)] bg-cover py-14 text-white md:bg-[url(/img/product-big-bg.png)] md:py-14 md:pr-14 md:pl-32"
+	id="testimonials"
 >
 	<div class="mb-12 flex w-full flex-col items-start justify-center px-8 md:px-0">
 		<div class="mb-4">
@@ -31,9 +14,7 @@
 	</div>
 	<div class="flex w-full flex-col items-center justify-center px-8 md:px-0">
 		<ul class="flex w-full flex-col gap-8">
-			<li
-				class="border-b-solid overflow-hidden border-b border-b-white py-6 font-light"
-			>
+			<li class="border-b-solid overflow-hidden border-b border-b-white py-6 font-light">
 				<p class="">
 					"Javier L. “Realicé un blindaje bunker, retiraron mi puerta, colocaron una provisoria y,
 					en el plazo pactado, instalaron la nueva con una prolijidad sobresaliente. Encajó a la
@@ -55,9 +36,7 @@
 					el resultado fue impecable, los recomiendo 100%, ahora estoy tranquilo!”"
 				</p>
 			</li>
-			<li
-				class="border-b-solid overflow-hidden border-b border-b-white py-6 text-2xl font-light"
-			>
+			<li class="border-b-solid overflow-hidden border-b border-b-white py-6 text-2xl font-light">
 				<p class="">
 					"Facundo F. “Me los recomendó un amigo en común, el cual es amigo personal de Javier
 					Gutierrez, no blindé las puertas por que me dijeron que al ser puertas de chapa no había
@@ -66,9 +45,7 @@
 					rápido, limpio y claros, ya se los recomendé a varios amigos y conocidos.”"
 				</p>
 			</li>
-			<li
-				class="border-b-solid overflow-hidden border-b border-b-white py-6 font-light"
-			>
+			<li class="border-b-solid overflow-hidden border-b border-b-white py-6 font-light">
 				<p class="">
 					"Anonimo: “Por razones de seguridad prefiero no dar mis datos, pero instalé los barrales,
 					en una zona rural, en la cual ya había probado de todo y como no suelo ir salvo fines de

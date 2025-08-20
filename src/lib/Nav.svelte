@@ -30,7 +30,7 @@
 			<a class={page.url.pathname === '/history' ? 'underline' : ''} href="history">Historia</a>
 		</li>
 		<li>
-			<a href={getContactHref()}>Charlemos</a>
+			<a target="_top" href={getContactHref()}>Charlemos</a>
 		</li>
 	</ul>
 	<button class="cursor-pointer md:hidden" onclick={openMenu}>
@@ -52,7 +52,7 @@
 				<a href="history">Historia</a>
 			</li>
 			<li>
-				<a onclick={closeMenu} href={getContactHref()}>Charlemos</a>
+				<a onclick={closeMenu} target="_top" href={getContactHref()}>Charlemos</a>
 			</li>
 		</ul>
 	</div>

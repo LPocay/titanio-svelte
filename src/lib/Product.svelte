@@ -1,25 +1,6 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
-	import { page } from '$app/state';
-	import { onMount } from 'svelte';
 	import LinkButton from './LinkButton.svelte';
 	import ScrollArrow from './ScrollArrow.svelte';
-
-	if (browser) {
-		onMount(() => {
-			const hash = page.url.hash;
-			if (hash) {
-				const el = document.querySelector(hash);
-				if (el) {
-					setTimeout(() => {
-						el.scrollIntoView({ behavior: 'smooth' });
-					}, 200);
-				}
-			} else {
-				window.scrollTo({ top: 0 });
-			}
-		});
-	}
 
 	export function playOnView(
 		node: HTMLVideoElement,
@@ -79,14 +60,16 @@
 		<LinkButton href="/product">Ver especificaciones</LinkButton>
 	</div>
 	<div
-		class="mx-auto mt-16 h-full w-full max-w-[230px] rounded-[120px] bg-[url(/img/barral-mobile.png)] bg-cover bg-center md:hidden"
+		class="mx-auto mt-16 h-full w-full max-w-[200px] rounded-[120px] bg-[url(/img/barral-mobile.png)] bg-cover bg-center md:hidden md:max-w-none"
 	>
 		<video
 			src="/video/v1.mp4"
 			autoplay
 			muted
 			loop
-			class="h-full w-full rounded-[120px] object-cover"
+			disablePictureInPicture
+      controlsList="nodownload"
+			class="h-full w-full rounded-[120px] object-cover object-center"
 			use:playOnView={{ threshold: 0.5, rootMargin: '150px 0px' }}
 		></video>
 	</div>
